@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>  
+  <body>
+   <div class="container1">
+
+    <div class="brand-title">IPL PREDICT PLAYER VALUES</div>
+      <div class="inputs">
+        <form action="{{url_for('predict')}}" method="post">
+          <label>RAA</label>
+          <input type="text" name="raa" placeholder="raa" required="required" />
+          <label>WINS</label>
+          <input type="text" name="wins" placeholder="wins" required="required" />
+          <label>EFSCORE</label>
+          <input type="text" name="efscore" placeholder="efscore" required="required" />
+          <label>SALARY</label>
+          <input type="text" name="salary" placeholder="salary" required="required" />
+
+          <button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+        </form>
+      </div>
+    </div> 
+  </body>
+</html>
