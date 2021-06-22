@@ -1,0 +1,4 @@
+catboost==0.26
+numpy==1.19.5
+Flask==1.1.2
+gunicorn==20.1.0
