@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>  
+  <body>
+   <div class="container1">
+
+    <div class="brand-title">IPL PREDICT PLAYER VALUES</div>
+      <div class="inputs">
+        <form action="{{url_for('predict')}}" method="post">
+          <label>Raa</label>
+          <input type="text" name="raa" placeholder="300 to 615" required="required" />
+          <label>Wins</label>
+          <input type="text" name="wins" placeholder="1.00 to 2.04" required="required" />
+          <label>Efscore</label>
+          <input type="text" name="efscore" placeholder="0.000 to 0.365" required="required" />
+          <label>Salary</label>
+          <input type="text" name="salary" placeholder="15000.000 to 3000000.000" required="required" />
+
+          <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+          <center>
+            <a href="https://github.com/developedbysm" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/swastik-mohanty/" class="fa fa-linkedin"></a>
+          </center>
+        </form>
+      </div>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:All Right Reserved
+      </div> 
+    </div>
+  </body>
+</html>
